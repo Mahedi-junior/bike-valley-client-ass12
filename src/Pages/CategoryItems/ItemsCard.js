@@ -38,7 +38,7 @@ const ItemsCard = ({ phone, openModal, setBookingProduct }) => {
     <div className="mx-auto p-6 max-w-sm w-full rounded-xl shadow-xl">
       <div className="overflow-hidden">
         <img
-          className="mx-auto hover:scale-110 duration-200 w-32"
+          className="mx-auto hover:scale-110 duration-200 w-37"
           src={image}
           alt=""
         />
