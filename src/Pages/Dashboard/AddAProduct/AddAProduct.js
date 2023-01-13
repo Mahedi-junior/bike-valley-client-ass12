@@ -36,7 +36,7 @@ const AddAProduct = () => {
           date: new Date().toISOString().slice(0, 10),
         };
 
-        fetch("http://localhost:5000/phones", {
+        fetch("http://localhost:5000/bikes", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -130,9 +130,10 @@ const AddAProduct = () => {
           <option value="Product Category" selected disabled>
             Product Category
           </option>
-          <option value="apple">Apple</option>
-          <option value="google">Google</option>
-          <option value="oneplus">OnePlus</option>
+          <option value="Yamaha">Yamaha</option>
+          <option value="Suzuki">Suzuki</option>
+          <option value="Bajaj">Bajaj</option>
+          <option value="Hero">Hero</option>
         </select>
         <textarea
           {...register("description", { required: true })}

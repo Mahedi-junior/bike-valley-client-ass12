@@ -81,7 +81,7 @@ const Register = () => {
                 })
                   .then((res) => res.json())
                   .then((data) => {
-                    // navigate(from, { replace: true })
+                    console.log(data);
                     fetch(
                       `http://localhost:5000/jwt?email=${loggedUser?.email}`
                     )
