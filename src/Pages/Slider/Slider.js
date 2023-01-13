@@ -19,9 +19,9 @@ const Slider = () => {
           }}
           className="relative w-full"
         >
-          <div className="absolute right-32 -top-28">
+          <div className="absolute left-32 -top-28">
             <h1 className="lg:text-8xl md:text-6xl text-4xl lg:leading-[90px] leading-[40px] font-bold text-white">
-              Curvy Bevel <br /> Dual Audio
+              Love to Ride, <br /> Live to travel.
             </h1>
             <button className="lg:px-10 lg:py-3 px-6 py-2 bg-none border-white border-2 text-white font-semibold mt-10">
               Shop Now
@@ -36,9 +36,8 @@ const Slider = () => {
           className="relative w-full"
         >
           <div className="absolute left-32 -top-32">
-            <h4 className="text-2xl font-bold text-black">4K RESOLUTION</h4>
-            <h1 className="lg:text-8xl md:text-6xl text-4xl lg:leading-[90px] leading-[40px] font-bold text-black">
-              Exclusive <br /> Steel Frame
+            <h1 className="lg:text-8xl md:text-6xl text-4xl lg:leading-[90px] leading-[40px] font-bold text-white">
+              Travel for fun <br /> not like work
             </h1>
             <button className="lg:px-10 lg:py-3 px-6 py-2 bg-none border-black border-2 text-black font-semibold mt-10">
               Shop Now
@@ -52,9 +51,9 @@ const Slider = () => {
           }}
           className="relative w-full"
         >
-          <div className="absolute right-32 -top-32">
+          <div className="absolute left-32 -top-32">
             <h1 className="lg:text-8xl md:text-6xl text-4xl lg:leading-[90px] leading-[40px] font-bold text-white">
-              Full Screen <br /> Display
+              Do the right thing, <br /> do the ride thing
             </h1>
             <button className="lg:px-10 lg:py-3 px-6 py-2 bg-none border-white border-2 text-white font-semibold mt-10">
               Shop Now
