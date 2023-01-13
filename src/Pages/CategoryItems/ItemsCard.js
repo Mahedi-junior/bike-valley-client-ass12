@@ -92,7 +92,7 @@ const ItemsCard = ({ phone, openModal, setBookingProduct }) => {
               openModal();
               setBookingProduct(phone);
             }}
-            className="bg-black px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full"
+            className="bg-green-700 px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full"
           >
             <span>Book Now</span> <FaCartArrowDown />
           </button>
@@ -102,7 +102,7 @@ const ItemsCard = ({ phone, openModal, setBookingProduct }) => {
           >
             <span>Add To Wishlist</span> <TbJewishStar />
           </button>
-          <button className="bg-red-600 px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full">
+          <button className="bg-rose-600 px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full">
             <span>Report To Admin</span> <MdOutlineReportGmailerrorred />
           </button>
         </div>
