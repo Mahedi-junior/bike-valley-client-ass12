@@ -23,7 +23,7 @@ const Slider = () => {
             <h1 className="lg:text-8xl md:text-6xl text-4xl lg:leading-[90px] leading-[40px] font-bold text-white">
               Love to Ride, <br /> Live to travel.
             </h1>
-            <button className="lg:px-10 lg:py-3 px-6 py-2 bg-none border-white border-2 text-white font-semibold mt-10">
+            <button className="lg:px-20 lg:py-3 px-6 py-2 bg-none hover:bg-slate-300 hover:text-black border-white border-2 text-white font-semibold mt-10">
               Shop Now
             </button>
           </div>
@@ -39,7 +39,7 @@ const Slider = () => {
             <h1 className="lg:text-8xl md:text-6xl text-4xl lg:leading-[90px] leading-[40px] font-bold text-white">
               Travel for fun <br /> not like work
             </h1>
-            <button className="lg:px-10 lg:py-3 px-6 py-2 bg-none border-black border-2 text-black font-semibold mt-10">
+            <button className="lg:px-20 lg:py-3 px-6 py-2 bg-none border-black hover:bg-slate-300 hover:text-black border-2 text-black font-semibold mt-10">
               Shop Now
             </button>
           </div>
@@ -55,7 +55,7 @@ const Slider = () => {
             <h1 className="lg:text-8xl md:text-6xl text-4xl lg:leading-[90px] leading-[40px] font-bold text-white">
               Do the right thing, <br /> do the ride thing
             </h1>
-            <button className="lg:px-10 lg:py-3 px-6 py-2 bg-none border-white border-2 text-white font-semibold mt-10">
+            <button className="lg:px-20 lg:py-3 px-6 py-2 bg-none border-white hover:bg-slate-300 hover:text-black border-2 text-white font-semibold mt-10">
               Shop Now
             </button>
           </div>
