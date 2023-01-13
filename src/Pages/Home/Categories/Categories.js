@@ -24,11 +24,13 @@ const Categories = () => {
           >
             <Link to={`/categories/${c.category}`}>
               <img
-                className="w-28 rounded-md mx-auto mb-2"
+                className="w-36 rounded-md mx-auto mb-2"
                 src={c.categoryImage}
                 alt=""
               />
-              <h3 className="text-xl font-semibold ">{c.categoryName}</h3>
+              <h3 className="text-xl font-semibold bg-green-400 rounded px-5">
+                {c.categoryName}
+              </h3>
             </Link>
           </div>
         ))}
