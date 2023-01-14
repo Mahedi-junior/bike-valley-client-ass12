@@ -11,8 +11,8 @@ const AddAProduct = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleBookingPhone = (data) => {
-    const phoneData = {
+  const handleBookingBike = (data) => {
+    const bikeData = {
       ...data,
       sellerName: user?.displayName,
       email: user?.email,
@@ -31,8 +31,8 @@ const AddAProduct = () => {
       .then((data) => {
         console.log(data);
         const photo = data.data.display_url;
-        const phone = {
-          ...phoneData,
+        const bike = {
+          ...bikeData,
           image: photo,
           date: new Date().toISOString().slice(0, 10),
         };
@@ -42,13 +42,13 @@ const AddAProduct = () => {
           headers: {
             "content-type": "application/json",
           },
-          body: JSON.stringify(phone),
+          body: JSON.stringify(bike),
         })
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
             if (data.acknowledged) {
-              toast.success("your phone successfully added!");
+              toast.success("your bike successfully added!");
               setLoading(false);
               navigate("/dashboard/myproducts");
               // navigate("/");
@@ -64,7 +64,7 @@ const AddAProduct = () => {
       </h3>
 
       <form
-        onSubmit={handleSubmit(handleBookingPhone)}
+        onSubmit={handleSubmit(handleBookingBike)}
         className="grid grid-cols-1 gap-4 mt-5 max-w-lg mx-auto p-4 rounded-xl shadow-xl"
       >
         <input
@@ -114,7 +114,7 @@ const AddAProduct = () => {
         </select>
 
         <input
-          {...register("phone", { required: true })}
+          {...register("bike", { required: true })}
           type="text"
           placeholder="Phone Number"
           className="outline-none border-2 border-black pl-3 py-1.5 rounded-lg"

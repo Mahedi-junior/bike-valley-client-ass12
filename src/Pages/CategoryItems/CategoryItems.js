@@ -34,6 +34,7 @@ const CategoryItems = () => {
             />
           ))}
       </div>
+
       {bookingProduct && (
         <BookingModal
           isOpen={isOpen}

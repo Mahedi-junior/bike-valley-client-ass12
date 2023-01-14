@@ -9,6 +9,7 @@ const Slider = () => {
   return (
     <div className="mb-12">
       <AwesomeSlider
+        bullets={false}
         style={{ "--slider-height-percentage": "50%" }}
         fillParent={false}
       >
