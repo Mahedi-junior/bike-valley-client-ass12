@@ -8,7 +8,7 @@ export default function Example() {
     <div className="z-20">
       <Menu as="div" className="relative inline-block">
         <div>
-          <Menu.Button className="">
+          <Menu.Button>
             <img
               className="w-10 h-10 rounded-full"
               src={user?.photoURL}

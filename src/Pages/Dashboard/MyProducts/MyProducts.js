@@ -8,11 +8,11 @@ import Loader from "../../../Shared/Loader/Loader";
 const MyProducts = () => {
   const { user } = useContext(AuthContext);
 
-  const { data: myPhones, isLoading } = useQuery({
-    queryKey: ["myPhones", user?.email],
+  const { data: myBikes, isLoading } = useQuery({
+    queryKey: ["myBikes", user?.email],
     queryFn: async () => {
       const res = await axios.get(
-        `http://localhost:5000/myPhones?email=${user?.email}`
+        `http://localhost:5000/myBikes?email=${user?.email}`
       );
       const data = await res.data;
       return data;
@@ -42,7 +42,7 @@ const MyProducts = () => {
 
   return (
     <div>
-      {myPhones.length === 0 ? (
+      {myBikes.length === 0 ? (
         <h2 className="mb-4 text-4xl font-semibold leading-tight text-gray-800 text-center">
           You Won't Have Any Product Yet!
         </h2>
@@ -73,7 +73,7 @@ const MyProducts = () => {
                 </tr>
               </thead>
               <tbody>
-                {myPhones.map((phone, idx) => (
+                {myBikes.map((phone, idx) => (
                   <tr
                     key={phone._id}
                     className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900"
