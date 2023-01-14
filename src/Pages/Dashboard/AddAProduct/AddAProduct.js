@@ -29,6 +29,7 @@ const AddAProduct = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         const photo = data.data.display_url;
         const phone = {
           ...phoneData,

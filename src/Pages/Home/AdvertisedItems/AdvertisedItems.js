@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../../contexts/AuthProvider";
+
 import BookingModal from "../../../Shared/BookingModal/BookingModal";
 import Loader from "../../../Shared/Loader/Loader";
 import ItemsCard from "../../CategoryItems/ItemsCard";
@@ -10,7 +11,7 @@ const AdvertisedItems = () => {
   let [isOpen, setIsOpen] = useState(false);
   const [adsProduct, setAdsProduct] = useState(null);
   const { user } = useContext(AuthContext);
-  console.log(user);
+  // console.log(user);
 
   function closeModal() {
     setIsOpen(false);
@@ -41,7 +42,7 @@ const AdvertisedItems = () => {
     },
   });
 
-  if (isLoading) {
+  if (isLoading || !email) {
     return <Loader />;
   }
 

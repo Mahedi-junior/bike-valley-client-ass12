@@ -24,9 +24,9 @@ const Login = () => {
           .then((res) => res.json())
           .then((data) => {
             const token = data.accessToken;
+            console.log(token);
             localStorage.setItem("accessToken", token);
-            // navigate(from, { replace: true });
-            navigate("/");
+            navigate(from, { replace: true });
           });
       })
       .catch((err) => {

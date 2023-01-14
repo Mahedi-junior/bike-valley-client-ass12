@@ -31,7 +31,7 @@ const MyProducts = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.upsertedCount > 0) {
-          toast.success("Ads Campaign Running!");
+          toast.success("Ads Campaign Successfully Running!");
         }
       });
   };

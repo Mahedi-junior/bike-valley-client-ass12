@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Slider />
-      {/* <AdvertisedItems /> */}
+      <AdvertisedItems />
       <Categories />
       <MobileSection />
     </div>

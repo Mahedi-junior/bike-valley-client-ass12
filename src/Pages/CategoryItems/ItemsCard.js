@@ -102,9 +102,9 @@ const ItemsCard = ({ phone, openModal, setBookingProduct }) => {
           >
             <span>Add To Wishlist</span> <TbJewishStar />
           </button>
-          <button className="bg-red-700 px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full">
+          {/* <button className="bg-red-700 px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full">
             <span>Report To Admin</span> <MdOutlineReportGmailerrorred />
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
