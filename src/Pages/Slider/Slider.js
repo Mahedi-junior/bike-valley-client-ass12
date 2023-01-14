@@ -7,7 +7,7 @@ import slider3 from "../../assets/slider/slider-3.png";
 
 const Slider = () => {
   return (
-    <div className="">
+    <div className="mb-12">
       <AwesomeSlider
         style={{ "--slider-height-percentage": "50%" }}
         fillParent={false}

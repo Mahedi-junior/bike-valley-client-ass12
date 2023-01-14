@@ -73,7 +73,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-6 text-sm text-center text-gray-800">
-        © {new Date().getFullYear()} Bike Valley All Rights Reserved
+        © {new Date().getFullYear()} Bike Valley All Rights Reserved <br />
+        <span>mahedi@gmail.com</span>
       </div>
     </footer>
   );

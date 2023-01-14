@@ -98,13 +98,10 @@ const ItemsCard = ({ phone, openModal, setBookingProduct }) => {
           </button>
           <button
             onClick={() => handleWishlist(phone)}
-            className="bg-orange-500 px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full"
+            className="bg-sky-500 px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full"
           >
             <span>Add To Wishlist</span> <TbJewishStar />
           </button>
-          {/* <button className="bg-red-700 px-4 py-2 text-white rounded cursor-pointer flex justify-center items-center space-x-2 w-full">
-            <span>Report To Admin</span> <MdOutlineReportGmailerrorred />
-          </button> */}
         </div>
       </div>
     </div>

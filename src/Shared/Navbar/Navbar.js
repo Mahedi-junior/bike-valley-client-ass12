@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const menuItems = (
     <>
-      <Link className="md:p-4 py-2 block" to="/home">
+      <Link className="md:p-4 py-2 block" to="/">
         Home
       </Link>
       <Link className="md:p-4 py-2 block" to="/blogs">
