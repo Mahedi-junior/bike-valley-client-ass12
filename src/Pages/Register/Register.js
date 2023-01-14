@@ -143,12 +143,13 @@ const Register = () => {
 
   return (
     <div className="my-10 px-10">
-      <h3 className="text-3xl font-bold text-center mb-8">Create an account</h3>
-
       <form
         onSubmit={handleSubmit}
-        className="lg:max-w-md md:max-w-md max-w-sm mx-auto"
+        className="lg:max-w-md md:max-w-md max-w-sm mx-auto bg-slate-300 p-8 rounded"
       >
+        <h3 className="text-3xl font-bold text-center mb-8">
+          Create an account
+        </h3>
         <div className="grid grid-cols-1 gap-4">
           <input
             type="text"
@@ -156,7 +157,7 @@ const Register = () => {
             placeholder="Full Name"
             value={userInfo.name}
             onChange={handleName}
-            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded-full"
+            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded"
           />
           <input
             type="email"
@@ -164,7 +165,7 @@ const Register = () => {
             placeholder="Email"
             value={userInfo.email}
             onChange={handleEmail}
-            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded-full"
+            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded"
           />
           <input
             type="password"
@@ -172,20 +173,20 @@ const Register = () => {
             placeholder="Password"
             value={userInfo.password}
             onChange={handlePassword}
-            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded-full"
+            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded"
           />
           <input
             type="file"
             name="img"
             required
             placeholder="Photo"
-            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded-full"
+            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded"
           />
           <select
             value={userInfo.role}
             required
             onChange={handleRole}
-            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded-full"
+            className="outline-none border border-gray-500 focus:border-black pl-4 py-3 rounded"
           >
             <option value="Please Select Your Role" selected disabled>
               Please Select Your Role
@@ -196,7 +197,7 @@ const Register = () => {
           <button
             className={`${
               loading ? "bg-white" : "bg-black"
-            } rounded-full text-white font-semibold text-xl -tracking-tight py-3 `}
+            } rounded text-white font-semibold text-xl -tracking-tight py-3 `}
           >
             {loading ? <Loader /> : "Create"}
           </button>
@@ -212,7 +213,7 @@ const Register = () => {
       <div className="lg:max-w-md md:max-w-md max-w-sm mx-auto mt-2.4">
         <button
           onClick={handleGoogleLogin}
-          className="rounded-full text-black border border-black font-semibold text-xl -tracking-tight py-3 w-full"
+          className="rounded text-black border hover:bg-green-400 border-black font-semibold text-xl -tracking-tight py-3 w-full"
         >
           {gLoading ? <Loader /> : "Login With Google"}
         </button>

@@ -76,7 +76,7 @@ const Login = () => {
 
       <form
         onSubmit={handleSubmit(handleLogin)}
-        className="lg:max-w-md md:max-w-md max-w-sm mx-auto lg:bg-gray-300 p-10 rounded"
+        className="lg:max-w-md md:max-w-md max-w-sm mx-auto bg-slate-300 p-10 rounded"
       >
         <h3 className="text-3xl font-bold text-center mb-8">Please Login!</h3>
 
