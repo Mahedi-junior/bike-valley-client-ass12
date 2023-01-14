@@ -5,7 +5,7 @@ const useSeller = (email) => {
   const [sellerLoading, setSellerLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/seller?email=${email}`)
+    fetch(`https://bike-valley-server.vercel.app/users/seller?email=${email}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data.isSeller);

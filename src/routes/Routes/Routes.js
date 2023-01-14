@@ -37,7 +37,9 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/bikes/categories/${params.category}`),
+          fetch(
+            `https://bike-valley-server.vercel.app/bikes/categories/${params.category}`
+          ),
       },
       {
         path: "/register",
@@ -117,7 +119,7 @@ export const router = createBrowserRouter([
         path: "/dashboard/payment/:id",
         element: <Payment />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/myorders/${params.id}`),
+          fetch(`https://bike-valley-server.vercel.app/myorders/${params.id}`),
       },
       {
         path: "*",

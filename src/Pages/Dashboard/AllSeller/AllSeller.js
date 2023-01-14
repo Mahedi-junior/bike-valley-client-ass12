@@ -15,7 +15,9 @@ const AllSeller = () => {
   } = useQuery({
     queryKey: ["allsellers"],
     queryFn: async () => {
-      const res = await axios.get("http://localhost:5000/users/allsellers");
+      const res = await axios.get(
+        "https://bike-valley-server.vercel.app/users/allsellers"
+      );
       const data = await res.data;
       return data;
     },
@@ -28,7 +30,7 @@ const AllSeller = () => {
   const handleDeleteSeller = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      fetch(`http://localhost:5000/users/${id}`, {
+      fetch(`https://bike-valley-server.vercel.app/users/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -42,9 +44,12 @@ const AllSeller = () => {
   };
 
   const handleVerify = (seller) => {
-    fetch(`http://localhost:5000/verifySeller?email=${seller?.email}`, {
-      method: "PUT",
-    })
+    fetch(
+      `https://bike-valley-server.vercel.app/verifySeller?email=${seller?.email}`,
+      {
+        method: "PUT",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         toast.success(`${seller.name} is a verified seller!`);

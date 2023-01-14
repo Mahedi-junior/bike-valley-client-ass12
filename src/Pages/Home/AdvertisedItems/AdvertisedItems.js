@@ -33,7 +33,7 @@ const AdvertisedItems = () => {
     queryFn: async () => {
       if (email) {
         const res = await axios.get(
-          `http://localhost:5000/ads?email=${email}`,
+          `https://bike-valley-server.vercel.app/ads?email=${email}`,
           config
         );
         const data = await res.data;

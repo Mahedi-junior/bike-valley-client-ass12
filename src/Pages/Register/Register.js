@@ -73,18 +73,21 @@ const Register = () => {
                   role: userInfo.role,
                 };
 
-                fetch(`http://localhost:5000/users/${loggedUser?.email}`, {
-                  method: "PUT",
-                  headers: {
-                    "content-type": "application/json",
-                  },
-                  body: JSON.stringify(user),
-                })
+                fetch(
+                  `https://bike-valley-server.vercel.app/users/${loggedUser?.email}`,
+                  {
+                    method: "PUT",
+                    headers: {
+                      "content-type": "application/json",
+                    },
+                    body: JSON.stringify(user),
+                  }
+                )
                   .then((res) => res.json())
                   .then((data) => {
                     console.log(data);
                     fetch(
-                      `http://localhost:5000/jwt?email=${loggedUser?.email}`
+                      `https://bike-valley-server.vercel.app/jwt?email=${loggedUser?.email}`
                     )
                       .then((res) => res.json())
                       .then((data) => {
@@ -118,16 +121,21 @@ const Register = () => {
           role: "Buyer",
         };
 
-        fetch(`http://localhost:5000/users/${loggedUser?.email}`, {
-          method: "PUT",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(user),
-        })
+        fetch(
+          `https://bike-valley-server.vercel.app/users/${loggedUser?.email}`,
+          {
+            method: "PUT",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify(user),
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
-            fetch(`http://localhost:5000/jwt?email=${loggedUser?.email}`)
+            fetch(
+              `https://bike-valley-server.vercel.app/jwt?email=${loggedUser?.email}`
+            )
               .then((res) => res.json())
               .then((data) => {
                 const token = data.accessToken;

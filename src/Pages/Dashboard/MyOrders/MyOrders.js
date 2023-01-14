@@ -10,7 +10,7 @@ const MyOrders = () => {
     queryKey: ["myorders", user?.email],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/myorders?email=${user?.email}`
+        `https://bike-valley-server.vercel.app/myorders?email=${user?.email}`
       );
       const data = res.json();
       return data;

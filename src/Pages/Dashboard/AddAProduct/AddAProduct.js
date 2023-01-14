@@ -37,7 +37,7 @@ const AddAProduct = () => {
           date: new Date().toISOString().slice(0, 10),
         };
 
-        fetch("http://localhost:5000/bikes", {
+        fetch("https://bike-valley-server.vercel.app/bikes", {
           method: "POST",
           headers: {
             "content-type": "application/json",

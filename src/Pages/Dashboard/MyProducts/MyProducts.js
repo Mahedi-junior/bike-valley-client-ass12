@@ -12,7 +12,7 @@ const MyProducts = () => {
     queryKey: ["myBikes", user?.email],
     queryFn: async () => {
       const res = await axios.get(
-        `http://localhost:5000/myBikes?email=${user?.email}`
+        `https://bike-valley-server.vercel.app/myBikes?email=${user?.email}`
       );
       const data = await res.data;
       return data;
@@ -20,7 +20,7 @@ const MyProducts = () => {
   });
 
   const handleRunAds = (phone) => {
-    const url = `http://localhost:5000/ads?id=${phone?._id}`;
+    const url = `https://bike-valley-server.vercel.app/ads?id=${phone?._id}`;
     fetch(url, {
       method: "PUT",
       headers: {

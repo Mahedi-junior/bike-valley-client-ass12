@@ -16,7 +16,7 @@ const AllBuyer = () => {
     queryKey: ["allbuyers", user?.email],
     queryFn: async () => {
       const res = await axios.get(
-        `http://localhost:5000/users/allbuyers?email=${user?.email}`,
+        `https://bike-valley-server.vercel.app/users/allbuyers?email=${user?.email}`,
         {
           headers: {
             authorization: `bearer ${localStorage.getItem("accessToken")}`,
@@ -31,7 +31,7 @@ const AllBuyer = () => {
   const handleDeleteBuyer = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      fetch(`http://localhost:5000/users/${id}`, {
+      fetch(`https://bike-valley-server.vercel.app/users/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

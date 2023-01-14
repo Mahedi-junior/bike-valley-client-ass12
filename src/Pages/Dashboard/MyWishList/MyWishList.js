@@ -9,7 +9,7 @@ const MyWishList = () => {
     queryKey: ["wishlist", user?.email],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/wishlist?email=${user?.email}`
+        `https://bike-valley-server.vercel.app/wishlist?email=${user?.email}`
       );
       const data = await res.json();
       return data;

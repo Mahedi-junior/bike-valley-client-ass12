@@ -1,7 +1,7 @@
 import React from "react";
 import banner from "../../../assets/bike.jpg";
 
-const MobileSection = () => {
+const BikeSection = () => {
   return (
     <div
       className="h-[90vh] flex justify-center items-center mb-20 bg-fixed"
@@ -19,4 +19,4 @@ const MobileSection = () => {
   );
 };
 
-export default MobileSection;
+export default BikeSection;

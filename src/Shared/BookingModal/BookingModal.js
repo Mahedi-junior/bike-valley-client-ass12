@@ -17,7 +17,7 @@ export default function BookingModal({
 
   const handleBookingPhone = (data) => {
     const name = data.productName;
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://bike-valley-server.vercel.app/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",

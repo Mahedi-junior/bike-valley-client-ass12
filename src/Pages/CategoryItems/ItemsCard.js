@@ -19,7 +19,7 @@ const ItemsCard = ({ phone, openModal, setBookingProduct }) => {
   const { user } = useContext(AuthContext);
 
   const handleWishlist = (phone) => {
-    fetch(`http://localhost:5000/wishlist?id=${phone._id}`, {
+    fetch(`https://bike-valley-server.vercel.app/wishlist?id=${phone._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
