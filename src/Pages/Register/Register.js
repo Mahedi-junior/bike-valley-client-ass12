@@ -64,6 +64,7 @@ const Register = () => {
             const loggedUser = result.user;
             updateUser(userInfo.name, photo)
               .then(() => {
+                navigate("/");
                 // navigate(from, {replace: true})
 
                 const user = {

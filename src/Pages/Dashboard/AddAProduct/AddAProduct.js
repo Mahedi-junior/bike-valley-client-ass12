@@ -45,10 +45,12 @@ const AddAProduct = () => {
         })
           .then((res) => res.json())
           .then((data) => {
+            console.log(data);
             if (data.acknowledged) {
               toast.success("your phone successfully added!");
               setLoading(false);
               navigate("/dashboard/myproducts");
+              // navigate("/");
             }
           });
       });
@@ -57,7 +59,7 @@ const AddAProduct = () => {
   return (
     <div>
       <h3 className="text-3xl font-semibold text-center">
-        Fill this form to sell your phone
+        Fill this form to sell your bike
       </h3>
 
       <form
